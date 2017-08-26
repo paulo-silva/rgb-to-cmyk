@@ -8,18 +8,40 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="clean">
-  <h1>RGB to CMYK Converter</h1>
+  <h1>RGB to CMYK</h1>
   <div id="inputsWrapper" class="inputs-wrapper">
     <div class="color-inputs" data-format="rgb">
-      <input type="number" min="0" max="255" id="rgb_red" class="color-input" data-color="red" placeholder="Red" maxlength="3">
-      <input type="number" min="0" max="255" id="rgb_green" class="color-input" data-color="green" placeholder="Green" maxlength="3">
-      <input type="number" min="0" max="255" id="rgb_blue" class="color-input" data-color="blue" placeholder="Blue" maxlength="3">
+      <label for="rgb_red">
+        R:
+        <input type="number" min="0" max="255" id="rgb_red" class="color-input" data-color="red" maxlength="3">
+      </label>
+
+      <label for="rgb_green">
+        G:
+        <input type="number" min="0" max="255" id="rgb_green" class="color-input" data-color="green" maxlength="3">
+      </label>
+      <label for="rgb_blue">
+        B:
+        <input type="number" min="0" max="255" id="rgb_blue" class="color-input" data-color="blue" maxlength="3">
+      </label>
     </div>
     <div class="color-inputs" data-format="cmyk">
-      <input type="number" min="0" id="cmyk_cyan" class="color-input" data-color="cyan" placeholder="Cyan" maxlength="3">
-      <input type="number" min="0" id="cmyk_magenta" class="color-input" data-color="majenta" placeholder="Majenta" maxlength="3">
-      <input type="number" min="0" id="cmyk_yellow" class="color-input" data-color="yellow" placeholder="Yellow" maxlength="3">
-      <input type="number" min="0" id="cmyk_black" class="color-input" data-color="black" placeholder="Black" maxlength="3">
+      <label for="cmyk_cyan">
+        C:
+        <input type="number" min="0" id="cmyk_cyan" class="color-input" data-color="cyan" maxlength="3">
+      </label>
+      <label for="cmyk_magenta">
+        M:
+        <input type="number" min="0" id="cmyk_magenta" class="color-input" data-color="majenta" maxlength="3">
+      </label>
+      <label for="cmyk_yellow">
+        Y:
+        <input type="number" min="0" id="cmyk_yellow" class="color-input" data-color="yellow" maxlength="3">
+      </label>
+      <label for="cmyk_black">
+        K:
+        <input type="number" min="0" id="cmyk_black" class="color-input" data-color="black" maxlength="3">
+      </label>
     </div>
   </div>
   <script src="assets/js/color_converter.js"></script>

@@ -37,8 +37,8 @@ body > h1 {
   color: #000;
 }
 .inputs-wrapper {
-  max-width: 458px;
-  min-width: 458px;
+  max-width: 618px;
+  min-width: 618px;
   padding: 30px;
   border-radius: 10px;
   display: -webkit-box;
@@ -54,6 +54,12 @@ body > h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.clean label {
+  color: #fff;
+}
+.dark label {
+  color: #000;
 }
 .clean > .inputs-wrapper {
   background-color: rgba(255, 255, 255, .1);

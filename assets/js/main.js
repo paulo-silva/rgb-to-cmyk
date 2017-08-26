@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (let i = 0; i < totalColorsInputs; i++) {
 
     colorsInput[i].addEventListener('input', function(event) {
-      let colorFormat = event.currentTarget.parentNode.dataset.format;
+      let colorFormat = event.currentTarget.parentNode.parentNode.dataset.format;
 
       calculateColorsValues(colorFormat);
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       values = colorConverter.rgbToCmyk(red, green, blue);
       document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
 
-      if (sumColor > 600) {
+      if (sumColor > 500) {
         document.body.classList.add('dark');
         document.body.classList.remove('clean');
       } else {
