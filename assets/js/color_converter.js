@@ -25,10 +25,10 @@ class ColorConverter {
     ;
 
     return {
-      cyan: parseFloat(cyan | 0).toFixed(3),
-      magenta: parseFloat(magenta | 0).toFixed(3),
-      yellow: parseFloat(yellow | 0).toFixed(3),
-      black: parseFloat(black | 0).toFixed(3)
+      cyan: parseFloat(cyan).toFixed(3),
+      magenta: parseFloat(magenta).toFixed(3),
+      yellow: parseFloat(yellow).toFixed(3),
+      black: parseFloat(black).toFixed(3)
     };
   }
 
