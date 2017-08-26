@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RGB to CMYK</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/font.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="clean">
+  <h1>RGB to CMYK Converter</h1>
+  <div id="inputsWrapper" class="inputs-wrapper">
+    <div class="color-inputs" data-format="rgb">
+      <input type="number" min="0" max="255" id="rgb_red" class="color-input" data-color="red" placeholder="Red" maxlength="3">
+      <input type="number" min="0" max="255" id="rgb_green" class="color-input" data-color="green" placeholder="Green" maxlength="3">
+      <input type="number" min="0" max="255" id="rgb_blue" class="color-input" data-color="blue" placeholder="Blue" maxlength="3">
+    </div>
+    <div class="color-inputs" data-format="cmyk">
+      <input type="number" min="0" id="cmyk_cyan" class="color-input" data-color="cyan" placeholder="Cyan" maxlength="3">
+      <input type="number" min="0" id="cmyk_magenta" class="color-input" data-color="majenta" placeholder="Majenta" maxlength="3">
+      <input type="number" min="0" id="cmyk_yellow" class="color-input" data-color="yellow" placeholder="Yellow" maxlength="3">
+      <input type="number" min="0" id="cmyk_black" class="color-input" data-color="black" placeholder="Black" maxlength="3">
+    </div>
+  </div>
+  <script src="assets/js/color_converter.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
