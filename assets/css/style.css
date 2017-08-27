@@ -61,6 +61,15 @@ body > h1 {
 .dark label {
   color: #000;
 }
+.swap_format {
+  cursor: pointer;
+}
+.clean .swap_format {
+  fill: #fff;
+}
+.dark .swap_format {
+  fill: #000;
+}
 .clean > .inputs-wrapper {
   background-color: rgba(255, 255, 255, .1);
   border: 3px solid rgba(255, 255, 255, .3);

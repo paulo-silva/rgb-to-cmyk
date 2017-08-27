@@ -61,4 +61,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  document.getElementById('swapColorFormat').addEventListener('click', function(event) {
+    let inputsWrapper = document.getElementById('inputsWrapper')
+      , children = inputsWrapper.children
+      , newForm = []
+      , firstElement = children[0]
+      , swapElement = children[children.length - 2]
+      , lastElement = children[children.length - 1]
+    ;
+
+    inputsWrapper.innerHTML = '';
+    inputsWrapper.appendChild(lastElement);
+    inputsWrapper.appendChild(swapElement);
+    inputsWrapper.appendChild(firstElement);
+
+  });
+
 });
