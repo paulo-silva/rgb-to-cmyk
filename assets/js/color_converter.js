@@ -41,15 +41,21 @@ class ColorConverter {
    * @return {object}           Valores de vermelho, verde e azul
    */
   cmykToRgb(cyan, magenta, yellow, black) {
-    let red = 255 * (1 - parseInt(cyan) | 0)* (1 - black)
-      , green = 255 * (1 - parseInt(magenta) | 0) * (1 - black)
-      , blue = 255 * (1 - parseInt(yellow) | 0) * (1 - black)
+
+    cyan = parseFloat(!cyan ? 0 : cyan);
+    magenta = parseFloat(!magenta ? 0 : magenta);
+    yellow = parseFloat(!yellow ? 0 : yellow);
+    black = parseFloat(!black ? 0 : black);
+
+    let red = Math.ceil(255 * (1 - cyan) * (1 - black))
+      , green = Math.ceil(255 * (1 - magenta) * (1 - black))
+      , blue = Math.ceil(255 * (1 - yellow) * (1 - black))
     ;
 
     return {
-      red: 255 - cyan,
-      green: 255 - magenta,
-      blue: 255 - yellow
+      red: red,
+      green: green,
+      blue: blue
     };
   }
 }
