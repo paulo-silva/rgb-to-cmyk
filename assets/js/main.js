@@ -24,8 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
       let red = parseInt(document.querySelector('[data-color=red]').value | 0)
         , green = parseInt(document.querySelector('[data-color=green]').value | 0)
         , blue = parseInt(document.querySelector('[data-color=blue]').value | 0)
-        , sumColor = red + green + blue
       ;
+
+      sumColor = red + green + blue;
 
       values = colorConverter.rgbToCmyk(red, green, blue);
       document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
